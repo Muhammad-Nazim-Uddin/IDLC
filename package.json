@@ -1,31 +1,28 @@
 {
-  "name": "idlc",
-  "version": "0.1.0",
-  "private": true,
+  "name": "idlc-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev -p 1000",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "antd": "^5.16.2",
-    "aos": "^2.3.4",
-    "next": "14.1.4",
-    "react": "^18",
-    "react-countup": "^6.5.3",
-    "react-dom": "^18",
-    "react-icons": "^5.1.0",
-    "sharp": "^0.33.3",
-    "swiper": "^11.1.1"
-  },
-  "devDependencies": {
-    "@types/node": "20.12.7",
-    "@types/react": "18.2.79",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "i18next": "^23.11.4",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.3.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13"
   }
 }
